@@ -1,0 +1,47 @@
+{
+  "name": "ile",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "server": "node --env-file=.env server/index.ts",
+    "start": "vite build && node --env-file=.env server/index.ts",
+    "dev:web": "vite",
+    "typecheck": "tsc -p tsconfig.json",
+    "import:ocw": "node --env-file=.env scripts/import-ocw.ts",
+    "rematch:solutions": "node --env-file=.env scripts/rematch-solutions.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/multer": "^1.4.13",
+    "@types/node": "^22.15.29",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.0",
+    "katex": "^0.16.22",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.6.2",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  },
+  "description": "Integrated Learning Environment: an AI-powered study hub that links course material (Source) to practice (Apply).",
+  "engines": {
+    "node": ">=22.18"
+  }
+}
